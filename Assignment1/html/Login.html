@@ -41,7 +41,7 @@
 <body>
     
     <div class="container">
-        <form>
+        <form class="was-validated">
             <div class="form-group">
                 <label for="Username">Username</label>
                 <input type="text" class="form-control is-valid" id="validationServer01" placeholder="" required>
@@ -80,5 +80,15 @@
             </div>
         </form>       
     </div>
+    <script>
+        function validateForm() {
+            var x = document.forms["myForm"]["fname"].value;
+            if (x == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+        }
+    </script>
+    
 </body>
 </html>
