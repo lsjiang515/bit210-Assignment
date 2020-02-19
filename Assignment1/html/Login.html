@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Signup</title>
+    <title>Login</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -12,6 +12,31 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     
 </head>
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">ECRS</a>
+        
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Login</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="#">Link</a>
+            </li> 
+            </ul>
+        </div> 
+    </nav>
 
 <body>
     
@@ -27,13 +52,6 @@
             <div class="form-group">
                 <label for="inputPassword">Password</label>
                 <input type="password" class="form-control is-valid" id="inputPassword1" placeholder="" required>
-                <div class="valid-feedback">
-                    Looks good!
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="Fullname">Fullname</label>
-                <input type="text" class="form-control is-valid" id="validationServer01" placeholder="" required>
                 <div class="valid-feedback">
                     Looks good!
                 </div>
@@ -58,7 +76,7 @@
                 </div>
             </fieldset>
             
-            <button type="submit" class="btn btn-primary">Sign Up</button>
+            <button type="submit" class="btn btn-primary">Login</button>
             </div>
         </form>       
     </div>
