@@ -6,7 +6,7 @@ General
 .carousel-inner img {
   width: 100%;
   height: 100%;
-  max-height: 400px;
+  max-height: 450px;
 }
 .carousel-inner{
   padding-top: 50px;
@@ -20,8 +20,15 @@ General
   .carousel-inner{
     padding: 0 0 0 0;
   }
+  .carousel-inner img {
+    max-height: 300px;
+  }
 }
-
+@media (max-width: 450px){
+  .carousel-inner img {
+    max-height: 200px;
+  }
+}
 
   
   
