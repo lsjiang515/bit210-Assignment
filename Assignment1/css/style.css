@@ -9,8 +9,19 @@ General
   max-height: 400px;
 }
 .carousel-inner{
-  padding: 50px;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  max-width: 1240px;
+  margin: auto;
 }
+
+@media (max-width: 768px){
+  .carousel-inner{
+    padding: 0 0 0 0;
+  }
+}
+
 
   
   
