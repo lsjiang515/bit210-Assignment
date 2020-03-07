@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Welcome to (ECRS)- Collector</title>
+	<title>Welcome to (ECRS)- Admin</title>
 	<link rel="icon" href="assets/arrow.png">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
@@ -35,7 +35,7 @@
 				<table class="table">
 					<thead>
 						<tr>
-							<th scope="col" class="col-xs-2">Request ID</th>
+							<th scope="col" class="col-xs-2">Material ID</th>
 							<th scope="col" class="col-xs-2">Material Name</th>
 							<th scope="col" class="col-xs-2">Description</th>
 							<th scope="col" class="col-xs-2">Pts per Kg</th>
@@ -62,25 +62,71 @@
 			</div>
 		</div>
 		<hr>
-		<div class="row justify-content-center panel-body">
+		<div class="row-panel-body">
 			<div class="col-md-6 col-md-offset-3">
 				<h3 align="center">Add Material</h3>
 				<form role="form" method="post">
 					<div class="form-group col-md-6">
 						<label for="materialNames">Material Name</label>
-						<input type="text" class="form-control" name="materialNames" value="" disabled>
+						<input type="text" class="form-control" name="materialNames" value="" required="">
 					</div>
 					<div class="form-group col-md-6">
 						<label for="description">Description:</label>
-						<input type="text" class="form-control" name="description" value="" disabled>
+						<input type="text" class="form-control" name="description" value="" required="">
 					</div>
 					<div class="form-group col-md-6">
 						<label for="pointsPerKg">Points PerKg :</label>
-						<input type="text" class="form-control" name="pointsPerKg" value="" disabled>
+						<input type="text" class="form-control" name="pointsPerKg" value="" required="">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="row-panel-body">
+			<div class="col-md-6 col-md-offset-3">
+				<h3 align="center">Delete Material</h3>
+				<form role="form" method="post">
+					<div class="form-group col-md-6">
+						<label for="materialId">Material ID</label>
+						<input type="text" class="form-control" name="materialNames" value="" required="">
 					</div>
 				</form>
 			</div>
 		</div>
 	</div>
+	<footer class="page-footer text-white bg-dark ">
+	<div class="container">
+		<div class="row mb-1">
+			<div class="col-md-4 mb-5 mt-3">
+				<h3 class="footer-text-header">About Us</h3>
+				<p class="footer-text-header">EcoSave is an organization contributing towards combating climate change by encouraging community members to become collectors for recyclable materials.</p>
+
+			</div>
+			<div class="col-md-5 mb-1 mt-3">
+				<h3 class="footer-text-header">Contact Info</h3>
+				<ul>
+					<li>
+						<span class="footer-text">Address:</span><br>
+						<span class="footer-text-header">Menara EcoSave99 Jalan Ampang,50450 Kuala Lumpur</span>
+					</li>
+					<li>
+						<span class="footer-text">Telephone:</span><br>
+						<span class="footer-text-header">1300-55-1899</span>
+					</li>
+					<li>
+						<span class="footer-text">Email:</span><br>
+						<span class="footer-text-header">service@ecosave.com</span>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+		<div class="row">
+			<div class="col-12 text-md-center text-left">
+				<p class="footer-text text-center">&copy; Copyright &copy;
+					<script>document.write(new Date().getFullYear());</script> All rights reserved | EcoSave</p>
+			</div>
+		</div>
+	</div>
+</footer>
 
 </html>
