@@ -30,83 +30,59 @@
 	<div class="bg-img">
 		
 		<div class="container panel panel-default">
-			<h2>Collector-Username</h2>
-			<div class="row panel-body">
+			<h2>Collector-Fullname</h2>
+			<div class="row justify-content-center panel-body">
 				<div class="col-md-6 col-md-offset-3">
 					<h3 align="center">Appointment</h3>
 					<table class="table">
 						<thead>
 							<tr>
-								<th scope="col" class="col-xs-3">Request ID</th>
-								<th scope="col" class="col-xs-3">Status</th>
-								<th scope="col" class="col-xs-3"></th>
-								<th scope="col" class="col-xs-3"></th>
+								<th scope="col" class="col-xs-2">Submission ID</th>
+								<th scope="col" class="col-xs-2">Material ID</th>
+								<th scope="col" class="col-xs-2">Proposed Date</th>
+								<th scope="col" class="col-xs-2">Actual Date</th>
+								<th scope="col" class="col-xs-2">Status</th>
+								<th scope="col" class="col-xs-2"></th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td scope="col">HE0001</td>
-								<td scope="col">Pending</td>
-								<td scope="col"><a href="#">Edit</a></td>
-								<td scope="col"><a href="review.html">Review</a></td>
+								<td scope="col">S0001</td>
+								<td scope="col">M0001</td>
+								<td scope="col">3/1/2020</td>
+								<td scope="col">5/1/2020</td>
+								<td scope="col">Done</td>
+								<td scope="col"><a href="SubmissionHistory.html">View</a></td>
 							</tr>
 							<tr>
-								<td scope="col">SH0001</td>
-								<td scope="col">Pending</td>
-								<td scope="col"><a href="#">Edit</a></td>
-								<td scope="col"><a href="review.html">Review</a></td>
+								<td scope="col">S0003</td>
+								<td scope="col">M0005</td>
+								<td scope="col">5/2/2020</td>
+								<td scope="col">7/2/2020</td>
+								<td scope="col">Proposed</td>
+								<td scope="col"><a href="#">View</a></td>
 							</tr>
 						</tbody>
 					</table>
 				</div>
 			</div>
 			<hr>
-			<div class="row panel-body">
+			<div class="row justify-content-center panel-body">
 				<div class="col-md-6 col-md-offset-3">
-					<h3 align="center">Material to recieve</h3>
-					<table class="table">
-						<thead>
-							<tr>
-								<th scope="col" class="col-xs-3">Request ID</th>
-								<th scope="col" class="col-xs-3">Status</th>
-								<th scope="col" class="col-xs-3">Material</th>
-								<th scope="col" class="col-xs-3"></th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td scope="col">HE0001</td>
-								<td scope="col">Pending</td>
-								<td scope="col">Paper</td>
-								<td scope="col"><a href="review.html">Review</a></td>
-							</tr>
-							<tr>
-								<td scope="col">SH0001</td>
-								<td scope="col">Pending</td>
-								<td scope="col"><a href="#">Edit</a></td>
-								<td scope="col"><a href="review.html">Review</a></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-			<hr>
-			<div class="row panel-body">
-				<div class="col-md-6 col-md-offset-3">
-					<h3 align="center">Edit Request</h3>
+					<h3 align="center">New Submission</h3>
 					<form role="form" method="post">
 						<div class="form-group col-md-6">
-							<label for="materialNames">Material Name</label>
-							<input type="text" class="form-control" name="materialNames" value="" disabled>
+							<label for="SubmissionID">Submission ID :</label>
+							<input type="value" class="form-control" name="SubmissionID" value="" disabled>
 						</div>
 						<div class="form-group col-md-6">
-							<label for="description">Description:</label>
-							<input type="text" class="form-control" name="description" value="" disabled>
+							<label for="weightInKg">Weight InKg :</label>
+							<input type="date" class="form-control" name="weightInKg" value="" disabled>
 						</div>
-						<div class="form-group col-md-6">
-							<label for="pointsPerKg">Points PerKg :</label>
-							<input type="text" class="form-control" name="pointsPerKg" value="" disabled>
+						<div class="col">
+							<button type="confirm" class="btn btn-primary" onclick="">Confirm</button>
 						</div>
+						
 					</form>
 				</div>
 			</div>
