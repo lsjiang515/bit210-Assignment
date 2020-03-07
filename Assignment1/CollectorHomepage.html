@@ -1,62 +1,132 @@
 <html>
-  	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>Welcome to (ECRS)- Collector</title>
-		<link rel="icon" href=".assets/arrow.png">
-		<link rel="stylesheet" href="css/style.css">
-		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-	</head>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Welcome to (ECRS)- Collector</title>
+	<link rel="icon" href="assets/arrow.png">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
-		<!-- Brand -->
-		<a class="navbar-brand" href="#">ECRS</a>
-	  
-		<!-- Toggler/collapsibe Button -->
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-		  <span class="navbar-toggler-icon"></span>
-		</button>
-	  
-		<!-- Navbar links -->
-		<div class="collapse navbar-collapse" id="collapsibleNavbar">
-		  <ul class="navbar-nav">
-			<li class="nav-item">
-			  <a class="nav-link" href="./Homepage.html">Home</a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link active" href="./ContactUs.html">ContactUs</a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="./Login.html">Login/SignUp</a>
-			</li> 
-		  </ul>
-		</div> 
-	</nav>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
 
-	<body>
-		<div class="container mt-3">
-			<div class="row">
-			<div class="col-sm-4">
-				<h3>Column 1</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-				<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+<nav class="navbar bg-dark navbar-dark">
+	<!-- Brand -->
+	<a class="navbar-brand" href="#">ECRS</a>
+
+	<!-- logout Button -->
+	<ul class="nav navbar-nav navbar-right border-1">
+		<button class="btn btn-light">Logout</button>
+	</ul>
+
+</nav>
+
+<body>
+	<div class="bg-img">
+		
+		<div class="container panel panel-default">
+			<h2>Collector-Username</h2>
+			<div class="row panel-body">
+				<div class="col-md-6 col-md-offset-3">
+					<h3 align="center">Appointment</h3>
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="col" class="col-xs-3">Request ID</th>
+								<th scope="col" class="col-xs-3">Status</th>
+								<th scope="col" class="col-xs-3"></th>
+								<th scope="col" class="col-xs-3"></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td scope="col">HE0001</td>
+								<td scope="col">Pending</td>
+								<td scope="col"><a href="#">Edit</a></td>
+								<td scope="col"><a href="review.html">Review</a></td>
+							</tr>
+							<tr>
+								<td scope="col">SH0001</td>
+								<td scope="col">Pending</td>
+								<td scope="col"><a href="#">Edit</a></td>
+								<td scope="col"><a href="review.html">Review</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 			</div>
-			<div class="col-sm-4">
-				<h3>Column 2</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-				<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+			<hr>
+			<div class="row panel-body">
+				<div class="col-md-6 col-md-offset-3">
+					<h3 align="center">Material to recieve</h3>
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="col" class="col-xs-3">Request ID</th>
+								<th scope="col" class="col-xs-3">Status</th>
+								<th scope="col" class="col-xs-3">Material</th>
+								<th scope="col" class="col-xs-3"></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td scope="col">HE0001</td>
+								<td scope="col">Pending</td>
+								<td scope="col">Paper</td>
+								<td scope="col"><a href="review.html">Review</a></td>
+							</tr>
+							<tr>
+								<td scope="col">SH0001</td>
+								<td scope="col">Pending</td>
+								<td scope="col"><a href="#">Edit</a></td>
+								<td scope="col"><a href="review.html">Review</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 			</div>
-			<div class="col-sm-4">
-				<h3>Column 3</h3>        
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-				<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-			</div>
+			<hr>
+			<div class="row panel-body">
+				<div class="col-md-6 col-md-offset-3">
+					<h3 align="center">Edit Request</h3>
+					<form role="form" method="post">
+						<div class="form-group col-md-6">
+							<label for="requestID">Request ID:</label>
+							<input type="text" class="form-control" name="requestID" value="" disabled>
+						</div>
+						<div class="form-group col-md-6">
+							<label for="serviceCode">Service Code:</label>
+							<input type="text" class="form-control" name="serviceCode" value="" disabled>
+						</div>
+						<div class="form-group col-md-6">
+							<label for="requestDate">Service Date:</label>
+							<input type="date" class="form-control" name="requestDate" value="" disabled>
+						</div>
+						<div class="form-group col-md-6">
+							<label for="requestStatus">Request Status:</label>
+							<select class="form-control" name="requestStatus" disabled>
+								<option value="Pending">Pending</option>
+								<option value="Cancelled">Cancelled</option>
+								<option value="Completed">Completed</option>
+							</select>
+						</div>
+						<div class="form-group col-md-12">
+							<label for="comments">Additional Notes:</label>
+							<textarea rows="4" class="form-control" value="" disabled></textarea>
+						</div>
+						<div class="form-group" align="center">
+							<button type="submit" class="btn btn-success">Save Changes</button>
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
-	</body>
+	</div>
+</body>
+
 </html>

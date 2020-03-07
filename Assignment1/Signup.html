@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Signup</title>
-    <link rel="icon" href=".assets/arrow.png">
+    <link rel="icon" href="assets/arrow.png">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -14,10 +14,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     
 </head>
+<nav class="navbar bg-dark navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">ECRS</a>
+
+    <!-- logout Button -->
+    <ul class="nav navbar-nav navbar-right border-1">
+        <a href="Login.html" class="btn btn-light">Back</a>
+    </ul>
+    
+</nav>
 
 <body>
     
-    <div class="container mt-3">
+    <div class="container mt-3 mb-5">
+        <h3>Sign-Up</h3>
         <form>
             <div class="form-group">
                 <label for="Username">Username</label>
@@ -65,4 +76,39 @@
         </form>       
     </div>
 </body>
+<footer class="page-footer text-white bg-dark ">
+	<div class="container">
+		<div class="row mb-5">
+			<div class="col-md-4 mb-5 mt-3">
+				<h3 class="footer-text-header">About Us</h3>
+				<p class="footer-text-header">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+
+			</div>
+			<div class="col-md-5 mb-5 mt-3">
+				<h3 class="footer-text-header">Contact Info</h3>
+				<ul>
+					<li>
+						<span class="footer-text">Address:</span><br>
+						<span class="footer-text-header">24, Block A, KB Tower A, 57120, Kuala Lumpur</span>
+					</li>
+					<li>
+						<span class="footer-text">Telephone:</span><br>
+						<span class="footer-text-header">+012-3456789</span>
+					</li>
+					<li>
+						<span class="footer-text">Email:</span><br>
+						<span class="footer-text-header">service@ecosave.com</span>
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+		<div class="row">
+			<div class="col-12 text-md-center text-left">
+				<p class="footer-text text-center">&copy; Copyright &copy;
+					<script>document.write(new Date().getFullYear());</script> All rights reserved | EcoSave</p>
+			</div>
+		</div>
+	</div>
+</footer>
 </html>
