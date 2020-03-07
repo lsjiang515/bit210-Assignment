@@ -25,23 +25,95 @@
 	</nav>
 
 	<body>
-		<div class="container mt-3">
-			<div class="row">
-			<div class="col-sm-4">
-				<h3>Column 1</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-				<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-			</div>
-			<div class="col-sm-4">
-				<h3>Column 2</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-				<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-			</div>
-			<div class="col-sm-4">
-				<h3>Column 3</h3>        
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-				<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-			</div>
+		<div class="bg-img">
+		
+			<div class="container panel panel-default">
+				<h2>Recycler-Fullname</h2>
+				<p></p>
+				<div class="row justify-content-center panel-body">
+					<div class="col-md-6 col-md-offset-3">
+						<h3 align="center">Material</h3>
+						<table class="table">
+							<thead>
+								<tr>
+									<th scope="col" class="col-xs-2">Request ID</th>
+									<th scope="col" class="col-xs-2">Material Name</th>
+									<th scope="col" class="col-xs-2">Description</th>
+									<th scope="col" class="col-xs-2">Pts perKg</th>
+									<th scope="col" class="col-xs-2">Collector</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td scope="col">M0001</td>
+									<td scope="col">Paper</td>
+									<td scope="col">Newspaper</td>
+									<td scope="col">5</td>
+									<td scope="col"><a href="#">View</a></td>
+								</tr>
+								<tr>
+									<td scope="col">M0002</td>
+									<td scope="col">Bottle</td>
+									<td scope="col">Plastic</td>
+									<td scope="col">10</td>
+									<td scope="col"><a href="#">View</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<hr>
+				<div class="row justify-content-center panel-body">
+					<div class="col-md-6 col-md-offset-3">
+						<h3 align="center">Appointment Make</h3>
+						<table class="table">
+							<thead>
+								<tr>
+									<th scope="col" class="col-xs-2">Submission ID</th>
+									<th scope="col" class="col-xs-2">Material ID</th>
+									<th scope="col" class="col-xs-2">Proposed Date</th>
+									<th scope="col" class="col-xs-2">Actual Date</th>
+									<th scope="col" class="col-xs-2">Status</th>
+									<th scope="col" class="col-xs-2"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td scope="col">S0001</td>
+									<td scope="col">M0001</td>
+									<td scope="col">3/1/2020</td>
+									<td scope="col">5/1/2020</td>
+									<td scope="col">Done</td>
+									<td scope="col"><a href="#">View</a></td>
+								</tr>
+								<tr>
+									<td scope="col">S0003</td>
+									<td scope="col">M0005</td>
+									<td scope="col">5/2/2020</td>
+									<td scope="col">7/2/2020</td>
+									<td scope="col">Proposed</td>
+									<td scope="col"><a href="#">View</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<hr>
+				<div class="row justify-content-center panel-body">
+					<div class="col-md-6 col-md-offset-3">
+						<h3 align="center">New Submission</h3>
+						<form role="form" method="post">
+							<div class="form-group col-md-6">
+								<label for="materialID">Material ID :</label>
+								<input type="value" class="form-control" name="materialID" value="" disabled>
+							</div>
+							<div class="form-group col-md-6">
+								<label for="proposedDate">Proposed Date :</label>
+								<input type="date" class="form-control" name="proposedDate" value="" disabled>
+							</div>
+						</form>
+					</div>
+				</div>
 			</div>
 		</div>
 	</body>
