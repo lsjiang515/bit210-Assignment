@@ -1,0 +1,60 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Welcome to (ECRS)- Admin</title>
+	<link rel="icon" href="assets/arrow.png">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<nav class="navbar bg-dark navbar-dark">
+	<!-- Brand -->
+	<a class="navbar-brand" href="#">ECRS</a>
+
+	<!-- logout Button -->
+	<ul class="nav navbar-nav navbar-right border-1">
+		<button class="btn btn-light">Logout</button>
+	</ul>
+
+</nav>
+
+<body>
+	<div class="container panel-default mt-3">
+		<h2>Admin</h2>
+		<div align="center" class="row justify-content-center panel-body">
+			<div class="col-md-6 col-md-offset-3">
+				<h3 align="center">Edit Material</h3>
+				<form class="was-validated">	
+            <div class="form-group">
+                <label for="MaterialName">Material Name</label>
+                <input type="text" class="form-control is-valid" id="materialNames" placeholder="" required>
+
+            </div>
+            <div class="form-group">
+                <label for="Description">Description</label>
+                <input type="text" class="form-control is-valid" id="description" placeholder="" required>
+
+            </div>
+            <div class="form-group">
+                <label for="PointsPerKg">Points perKg</label>
+                <input type="text" class="form-control is-valid" id="pointsPerKg" placeholder="" required>
+
+            </div>
+				</form>
+			</div>
+		</div>
+		<hr>
+		<div class="wrapper">
+	 <button  type="submit" class="btn btn-primary" onclick="">Edit Material</button>
+	</div>
+	</div>
+
+</html>
