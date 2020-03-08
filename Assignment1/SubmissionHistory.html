@@ -1,0 +1,69 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Welcome to (ECRS)- Collector</title>
+	<link rel="icon" href="assets/arrow.png">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<nav class="navbar bg-dark navbar-dark">
+	<!-- Brand -->
+	<a class="navbar-brand" href="#">ECRS</a>
+
+	<!-- logout Button -->
+	<ul class="nav navbar-nav navbar-right border-1">
+		<button class="btn btn-light" onclick="history.back()">Back</button>
+	</ul>
+
+</nav>
+
+<body>
+	<div class="container panel-default mt-3">
+		<h2>Admin</h2>
+		<div align="center" class="row justify-content-center panel-body">
+			<div class="col-md-6 col-md-offset-3">
+				<h3 align="center">Material</h3>
+				<table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="col-xs-2">Submission ID</th>
+                            <th scope="col" class="col-xs-2">Material ID</th>
+                            <th scope="col" class="col-xs-2">Weight in Kg</th>
+                            <th scope="col" class="col-xs-2">Point rewarded</th>
+                            <th scope="col" class="col-xs-2">Status</th>
+                            <th scope="col" class="col-xs-2"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="col">S0001</td>
+                            <td scope="col">M0001</td>
+                            <td scope="col">3/1/2020</td>
+                            <td scope="col">5/1/2020</td>
+                            <td scope="col">Done</td>
+                            <td scope="col"><a href="SubmissionHistory.html">View</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="col">S0003</td>
+                            <td scope="col">M0005</td>
+                            <td scope="col">5/2/2020</td>
+                            <td scope="col">7/2/2020</td>
+                            <td scope="col">Proposed</td>
+                            <td scope="col"><a href="#">View</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+			</div>
+		</div>	
+	</div>
+
+</html>
