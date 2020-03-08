@@ -37,5 +37,15 @@ General
     max-height: 200px;
   }
 }
+
+.bg-img{
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom:20px;
+  background: url(./assets/blade-of-grass.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
   
    

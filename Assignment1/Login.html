@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,86 +10,90 @@
     <script src="main.js"></script>
     <link rel="icon" href="assets/arrow.png">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    
+
 </head>
 
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
     <!-- Brand -->
     <a class="navbar-brand" href="#">ECRS</a>
-    
+
     <!-- Toggler/collapsibe Button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
     </button>
-    
+
     <!-- Navbar links -->
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="./Homepage.html">Home</a>
+                <a class="nav-link" href="./Homepage.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./ContactUs.html">ContactUs</a>
+                <a class="nav-link" href="./ContactUs.html">ContactUs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="./Login.html">Login/SignUp</a>
+                <a class="nav-link active" href="./Login.html">Login/SignUp</a>
             </li>
         </ul>
-    </div> 
+    </div>
 </nav>
 
-<body>   
-    <div class="container mt-5 mb-5">
-        <h3>Login</h3>
-        <form class="was-validated">
-            <div class="form-group">
-                <label for="Username">Username</label>
-                <input type="text" class="form-control is-valid" id="username" placeholder="" required>
-                
-            </div>
-            <div class="form-group">
-                <label for="inputPassword">Password</label>
-                <input type="password" class="form-control is-valid" id="password" placeholder="" required>
-                
-            </div>
-            <fieldset class="form-group">
-                <div class="row">
-                    <legend class="col-form-label col-sm-4 pt-0">User Type </legend>
-                    <div class="col-sm-8">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="userType" id="Recycler " value="Recycler" checked>
-                            <label class="form-check-label" for="Recycler">
-                                Recycler
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="userType" id="Collector" value="Collector">
-                            <label class="form-check-label" for="Collector">
-                                Collector
-                            </label>
-                        </div>
+<body>
+    <div class="container  mt-5 mb-5">
+        <h2 class="text-center">Login</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-md-offset-3 ">
+                <form class="was-validated">
+                    <div class="form-group">
+                        <label for="Username">Username</label>
+                        <input type="text" class="form-control is-valid" id="username" placeholder="" required>
+
                     </div>
-                </div>
-            </fieldset>
-            <div class="row">
-                <div class="col-sm-2">
-                    <button type="submit" class="btn btn-primary" onclick="getInfo()">Login</button>
-                </div>
-                <div class="col-sm-10">
-                    <p>Not a user yet? Click <a href="Signup.html">here</a> to signup. </p>
-                </div>
-                
-            </div>
-            
-            
+                    <div class="form-group">
+                        <label for="inputPassword">Password</label>
+                        <input type="password" class="form-control is-valid" id="password" placeholder="" required>
+
+                    </div>
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-4 pt-0">User Type </legend>
+                            <div class="col-sm-8">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="userType" id="Recycler "
+                                        value="Recycler" checked>
+                                    <label class="form-check-label" for="Recycler">
+                                        Recycler
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="userType" id="Collector"
+                                        value="Collector">
+                                    <label class="form-check-label" for="Collector">
+                                        Collector
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <button type="submit" class="btn btn-primary" onclick="getInfo()">Login</button>
+                        </div>
+                        <div class="col-sm-10">
+                            <p>Not a user yet? Click <a href="Signup.html">here</a> to signup. </p>
+                        </div>
+
+                    </div>
 
             </div>
-        </form>       
+        </div>
+    </div>
+    </form>
     </div>
     <script>
         function validateForm() {
@@ -100,14 +105,15 @@
 
         }
     </script>
-    
+
 </body>
 <footer class="page-footer text-white bg-dark ">
     <div class="container">
         <div class="row mb-1">
             <div class="col-md-4 mb-5 mt-3">
                 <h3 class="footer-text-header">About Us</h3>
-                <p class="footer-text-header">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                <p class="footer-text-header">EcoSave is an organization contributing towards combating climate 
+                    change by encouraging community members to become collectors for recyclable materials.</p>
 
             </div>
             <div class="col-md-5 mb-1 mt-3">
@@ -137,4 +143,5 @@
         </div>
     </div>
 </footer>
+
 </html>
